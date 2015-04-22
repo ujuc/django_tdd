@@ -1,0 +1,6 @@
+€}q(Usuperlists.settings]q(U	TEMPLATESqUUSE_L10NqULANGUAGE_CODEqUUSE_TZqUUSE_I18NqU	DATABASESqU	TIME_ZONEq	U
+STATIC_URLq
+UROOT_URLCONFqUWSGI_APPLICATIONqUMIDDLEWARE_CLASSESqUDEBUGqUALLOWED_HOSTSqU
+SECRET_KEYqUBASE_DIRqUINSTALLED_APPSqeUdatetimeq]q(U	timedeltaqUMAXYEARqUdateqUdatetime_CAPIqUtzinfoqUtimeqUMINYEARqUdatetimeqeUmanage]Usuperlists.urls]qUurlpatternsqaUsuperlists.wsgi]qUapplicationq aU
+superlists]Ushutilq!]q"(Ucopyfileq#Uignore_patternsq$Ucopytreeq%Uget_archive_formatsq&Ucopyfileobjq'Uregister_archive_formatq(Ucopymodeq)Umake_archiveq*Umoveq+Uunregister_archive_formatq,Urmtreeq-UErrorq.Ucopyq/U	ExecErrorq0Ucopy2q1USpecialFileErrorq2Ucopystatq3UWindowsErrorq4eUosq5]q6(Upopen4q7Uexecleq8Upopen3q9USEEK_CURq:Uspawnlpq;Uexeclpq<Uenvironq=Uspawnvpq>Uspawnlq?Uexecvpq@UmakedirsqAUlinesepqBUP_WAITqCUspawnvqDUspawnveqEUexecvpeqFUunsetenvqGUSEEK_SETqHUgetenvqIUpopen2qJUwalkqKUspawnleqLUexeclqMUnameqNUSEEK_ENDqOUspawnlpeqPU	P_NOWAITOqQUP_NOWAITqRU
+removedirsqSUrenamesqTUspawnvpeqUUexeclpeqVeUfunctional_test]qWUNewVisitorTestqXau.

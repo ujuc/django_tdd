@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
 
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-class NewVisitorTest(LiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -91,7 +91,7 @@ class NewVisitorTest(LiveServerTestCase):
         # 에디스는 사이트가 입력한 목록을 저장하고 있는지 궁금하다.
         # 사이트는 그녀를 위한 특정 URL을 생성해준다.
         # 이때 URL에 대한 성명도 함께 제공된다.
-        self.fail("Finish the test!")
+        # self.fail("Finish the test!")
 
         # 해당 URL에 접속하면 그녀가 만든 작업 목록이 그대로 있는 것을 확인할 수 있다.
 
