@@ -31,11 +31,12 @@ def new_list(request):
     try:
         item.full_clean()
         item.save()
+      return redirect(list_)
     except ValidationError:
         list_.delete()
         error = "You can't have an empty list item"
         return render(request, 'home.html', {"error": error})
-    return redirect('view_list', list_.id)
+
 
 
 def add_item(request, list_id):

@@ -22,7 +22,7 @@ class HomePageTest(TestCase):
 
     def test_saving_a_POST_request(self):
         self.client.post(
-            '/lists/new',
+            '/lists/new/',
             data={'item_text': '신규 작업 아이템'}
         )
         self.assertEqual(Item.objects.count(), 1)
@@ -31,11 +31,11 @@ class HomePageTest(TestCase):
 
     def test_redirects_after_POST(self):
         response = self.client.post(
-            '/lists/new',
+            '/lists/new/',
             data={'item_text': '신규 작업 아이템'}
         )
         new_list = List.objects.first()
-        self.assertRedirects(response, '/lists/{}/'.format(new_list.id))
+        self.assertRedirects(response, '/lists/%d/' % new_list.id)
 
 
 class ListViewTest(TestCase):
