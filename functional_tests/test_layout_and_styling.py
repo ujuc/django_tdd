@@ -11,7 +11,7 @@ class LayoutAndStylingTest(FunctionalTest):
 
         # 그녀 새로운 리스트를 시작하고 입력 상자가
         # 가운데 배치된 것을 확인한다.
-        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.get_item_inpu_box()
         inputbox.send_keys('testing\n')
         self.assertAlmostEqual(
             inputbox.location['x'] + inputbox.size['width'] / 2,

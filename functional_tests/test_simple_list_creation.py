@@ -17,7 +17,7 @@ class NewVisitorTest(FunctionalTest):
         self.assertIn('To-Do', header_text)
 
         # 그녀는 바로 작업을 추가하기로 한다.
-        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.get_item_inpu_box()
         self.assertEqual(
             inputbox.get_attribute('placeholder'),
             "작업 아이템 입력"
@@ -37,7 +37,7 @@ class NewVisitorTest(FunctionalTest):
         # 추가 아이템을 입력할 수 있는 여분의 텍스트 상자가 존재한다.
         # 다시 "공작깃털을 이용해서 그물 만들기"라고 입력한다. (에디스는 매우
         # 체계적인사람이다.)
-        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.get_item_inpu_box()
         inputbox.send_keys('공작깃털을 이용해서 그물 만들기')
         inputbox.send_keys(Keys.ENTER)
 
@@ -61,7 +61,7 @@ class NewVisitorTest(FunctionalTest):
 
         # 프란시스가 새로운 작업 아이템을 입력하기시작한다.
         # 그는 에디스보다 재미가 없다.
-        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.get_item_inpu_box()
         inputbox.send_keys('우유 사기')
         inputbox.send_keys(Keys.ENTER)
 
