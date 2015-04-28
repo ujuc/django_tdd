@@ -34,3 +34,17 @@ class ItemValidationTest(FunctionalTest):
         self.get_item_inpu_box().send_keys('tea 만들기\n')
         self.check_for_row_in_list_table('1: 우유 사기')
         self.check_for_row_in_list_table('2: tea 만들기')
+
+    def test_cannot_add_duplicate_items(self):
+        # 에디스는 메인페이지로 돌아가서 신규 목록을 시작한다.
+        self.browser.get(self.server_url)
+        self.get_item_inpu_box().send_keys('콜라 사기\n')
+        self.check_for_row_in_list_table('1: 콜라 사기')
+
+        # 실수로 중복 아이템을 입력한다.
+        self.get_item_inpu_box().send_keys('콜라 사기\n')
+
+        # 도움이 되는 에러 메시지를 본다.
+        self.check_for_row_in_list_table('1: 콜라 사기')
+        error = self.browser.find_element_by_css_selector('.has-error')
+        self.assertEqual(error.text, '이미 등록한 작업입니다.')
