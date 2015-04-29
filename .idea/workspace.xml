@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e610b3a2-3983-44aa-aff6-df2911245a2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/forms.py" afterPath="$PROJECT_DIR$/lists/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/tests/test_forms.py" afterPath="$PROJECT_DIR$/lists/tests/test_forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/tests/test_view.py" afterPath="$PROJECT_DIR$/lists/tests/test_view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/views.py" afterPath="$PROJECT_DIR$/lists/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lists/static/list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lists/static/tests/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lists/static/tests/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lists/static/tests/tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/templates/base.html" afterPath="$PROJECT_DIR$/lists/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="superlists.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path=".vagrant/" />
     <manually-removed-from-ignored>
       <directory path=".idea/" />
     </manually-removed-from-ignored>
@@ -48,32 +50,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lists/tests/test_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.92" vertical-offset="47" max-vertical-offset="1050">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lists/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="345">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lists/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="600">
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -85,11 +65,46 @@
       <file leaf-file-name="test_list_item_validation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functional_tests/test_list_item_validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="840">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
+            <state vertical-scroll-proportion="-19.04" vertical-offset="79" max-vertical-offset="1110">
+              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding>
                 <element signature="e#24#49#0" expanded="true" />
+                <marker date="1430318443000" expanded="true" signature="126:2234" placeholder="..." />
+                <marker date="1430318443000" expanded="true" signature="1696:2129" placeholder="..." />
+                <marker date="1430318443000" expanded="true" signature="2163:2234" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lists/static/tests/tests.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0379746" vertical-offset="0" max-vertical-offset="570">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lists/static/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.04411765" vertical-offset="0" max-vertical-offset="680">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lists/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="690">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +112,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lists/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180">
               <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
               <folding />
             </state>
@@ -107,18 +122,8 @@
       <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functional_tests/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="615">
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
               <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_layout_and_styling.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functional_tests/test_layout_and_styling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="390">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -127,7 +132,7 @@
       <file leaf-file-name="test_forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lists/tests/test_forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.04" vertical-offset="199" max-vertical-offset="930">
+            <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="930">
               <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
               <folding>
                 <element signature="e#24#56#0" expanded="true" />
@@ -136,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lists/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0305344" vertical-offset="0" max-vertical-offset="780">
+            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="780">
               <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
               <folding>
                 <element signature="e#24#48#0" expanded="true" />
@@ -151,7 +156,7 @@
       <file leaf-file-name="test_view.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lists/tests/test_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.8" vertical-offset="1230" max-vertical-offset="2760">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2760">
               <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
               <folding>
                 <element signature="e#23#48#0" expanded="true" />
@@ -185,16 +190,20 @@
         <option value="$PROJECT_DIR$/lists/templates/list.html" />
         <option value="$PROJECT_DIR$/functional_tests/base.py" />
         <option value="$PROJECT_DIR$/lists/static/base.css" />
-        <option value="$PROJECT_DIR$/lists/templates/base.html" />
         <option value="$PROJECT_DIR$/functional_tests/test_layout_and_styling.py" />
         <option value="$PROJECT_DIR$/functional_tests/test_simple_list_creation.py" />
-        <option value="$PROJECT_DIR$/functional_tests/test_list_item_validation.py" />
         <option value="$PROJECT_DIR$/lists/models.py" />
         <option value="$PROJECT_DIR$/lists/tests/test_models.py" />
         <option value="$PROJECT_DIR$/lists/tests/test_view.py" />
         <option value="$PROJECT_DIR$/lists/views.py" />
         <option value="$PROJECT_DIR$/lists/tests/test_forms.py" />
         <option value="$PROJECT_DIR$/lists/forms.py" />
+        <option value="$PROJECT_DIR$/functional_tests/test_list_item_validation.py" />
+        <option value="$PROJECT_DIR$/static/tests/tests.js" />
+        <option value="$PROJECT_DIR$/static/tests/tests.html" />
+        <option value="$PROJECT_DIR$/static/list.js" />
+        <option value="$PROJECT_DIR$/lists/templates/base.html" />
+        <option value="$PROJECT_DIR$/lists/static/list.js" />
       </list>
     </option>
   </component>
@@ -206,9 +215,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
     <option name="y" value="23" />
-    <option name="width" value="1919" />
+    <option name="width" value="1920" />
     <option name="height" value="1147" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -449,6 +457,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superlists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superlists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="functional_tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -481,6 +511,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lists/static" />
       <recent name="$PROJECT_DIR$/functional_tests" />
     </key>
   </component>
@@ -992,29 +1023,35 @@
       <option name="project" value="LOCAL" />
       <updated>1430240773355</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="12장.. 폼......">
+      <created>1430242299166</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1430242299166</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="23" width="1919" height="1147" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1147" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985783" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890996" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17030336" sideWeight="0.4992928" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17340426" sideWeight="0.4992928" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29344264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25261688" sideWeight="0.5007072" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1048,7 +1085,8 @@
     <MESSAGE value="11 장 완료." />
     <MESSAGE value="모델 계층의 중복 아이템 검증 구현" />
     <MESSAGE value="Add ExistingListItemForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ExistingListItemForm" />
+    <MESSAGE value="12장.. 폼......" />
+    <option name="LAST_COMMIT_MESSAGE" value="12장.. 폼......" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,26 +1095,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functional_tests/test_list_item_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="615">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lists/tests/test_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="660">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lists/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="570">
@@ -1091,7 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,13 +1131,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy_tools/provisioning_notes.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="630">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/superlists/__init__.py">
@@ -1134,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="585">
           <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="270">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="360">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,13 +1302,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0829493" vertical-offset="0" max-vertical-offset="1155">
           <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/superlists/settings.py">
@@ -1326,13 +1340,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy_tools/provisioning_notes.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="630">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/superlists/urls.py">
@@ -1360,7 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,15 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="270">
           <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lists/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="660">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,31 +1388,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1365">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests/test_layout_and_styling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="390">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="390">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functional_tests/test_list_item_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="840">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lists/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="345">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding />
         </state>
@@ -1416,17 +1409,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/tests/test_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.92" vertical-offset="47" max-vertical-offset="1050">
+        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1050">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="e#23#48#0" expanded="true" />
+            <element signature="e#23#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="615">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
@@ -1434,7 +1427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/tests/test_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.8" vertical-offset="1230" max-vertical-offset="2760">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2760">
           <caret line="120" column="76" selection-start-line="120" selection-start-column="76" selection-end-line="120" selection-end-column="76" />
           <folding>
             <element signature="e#23#48#0" expanded="true" />
@@ -1444,7 +1437,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180">
           <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding />
         </state>
@@ -1452,7 +1445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -1462,7 +1455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/tests/test_forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.04" vertical-offset="199" max-vertical-offset="930">
+        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="930">
           <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
           <folding>
             <element signature="e#24#56#0" expanded="true" />
@@ -1472,10 +1465,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0305344" vertical-offset="0" max-vertical-offset="780">
+        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="780">
           <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding>
             <element signature="e#24#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functional_tests/test_list_item_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.04" vertical-offset="79" max-vertical-offset="1110">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+            <marker date="1430318443000" expanded="true" signature="126:2234" placeholder="..." />
+            <marker date="1430318443000" expanded="true" signature="1696:2129" placeholder="..." />
+            <marker date="1430318443000" expanded="true" signature="2163:2234" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/static/tests/tests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0379746" vertical-offset="0" max-vertical-offset="570">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/static/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04411765" vertical-offset="0" max-vertical-offset="680">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
