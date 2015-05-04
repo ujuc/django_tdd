@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lists" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/superlists" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/functional_tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/accounts" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -25,7 +26,6 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/lists/templates" />
-        <option value="$MODULE_DIR$/static" />
       </list>
     </option>
   </component>

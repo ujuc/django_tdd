@@ -42,5 +42,12 @@
 </div>
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="/static/list.js"></script>
+<script src="/static/accounts.js"></script>
+<script>
+    /*global $, Superlists, navigator */
+    $(document).ready(function() {
+        Superlists.Accounts.initialize(navigator)
+    });
+</script>
 </body>
 </html>
