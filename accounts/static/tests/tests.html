@@ -93,6 +93,26 @@
                 'POST data 확인'
             );
         });
+
+        test("onlogout은 단지 함수 틀이다", function() {
+            Superlists.Accounts.initialize(mockNavigator, user, token, urls);
+            var lnlogoutCallback = mockNavigator.id.watch.firstCall.args[0].onlogout;
+            equal(typeof onlogoutCallback, "function", "onlogout는 함수여야 한다");
+        });
+
+        test("onlogin post가 실패하면 navigator.id.logout 실행", function () {
+            mockNavigator.id.logout = sinon.mock();
+            Superlists.Accounts.initialize(mockNavigator, user, token, urls);
+            var onloginCallback = mockNavigator.id.watch.firstCall.args[0].onlogin;
+            var server = sinon.fakeServer.create();
+            server.respondWith([403, {}, "접속 거부"]);
+
+            onloginCallback();
+            equal(mockNavigator.id.logout.called, false, '아직 로그아웃하면 안 된다');
+
+            server.respond();
+            equal(mockNavigator.id.logout.called, true, 'logout을 호출해야 한다');
+        });
     </script>
 </body>
 </html>

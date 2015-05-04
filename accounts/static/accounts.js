@@ -14,7 +14,10 @@ var initialize = function (navigator, user, token, urls) {
         		urls.login,
         		{ assertion: assertion, scrfmiddlewaretoken: token }
         	);
-        }
+        	deferred.done(function () { window.location.reload(); })
+        	deferred.fail(function () { navigator.id.logout(); });
+        },
+        onlogout: function () {}
     });
 };
 
