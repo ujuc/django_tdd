@@ -9,7 +9,7 @@ class LoginViewTest(TestCase):
 	@patch('accounts.views.authenticate')
 	def test_calls_authenticate_with_assertion_from_post(
 		self, mock_authenticate
-	);
+	):
 		mock_authenticate.return_value = None
 		self.client.post('/accounts/login', {'assertion': 'assert this'})
 		mock_authenticate.assert_called_once_with(assertion='assert this')
@@ -17,7 +17,7 @@ class LoginViewTest(TestCase):
 	@patch('accounts.views.authenticate')
 	def test_returns_OK_when_user_found(
 		self, mock_authenticate
-	);
+	):
 		user = User.objects.create(email='a@b.com')
 		user.backend = ''
 		mock_authenticate.return_value = user
@@ -27,7 +27,7 @@ class LoginViewTest(TestCase):
 	@patch('accounts.views.authenticate')
 	def test_returns_OK_when_user_found(
 		self, mock_authenticate
-	);
+	):
 		user = User.objects.create(email='a@b.com')
 		user.backend = ''
 		mock_authenticate.return_value = user
@@ -37,7 +37,7 @@ class LoginViewTest(TestCase):
 	@patch('accounts.views.authenticate')
 	def test_returns_OK_when_user_found(
 		self, mock_authenticate
-	);
+	):
 		mock_authenticate.return_value = None
-		self.cleint.post('/accounts/login', {'assertion': 'a'})
+		self.client.post('/accounts/login', {'assertion': 'a'})
 		self.assertNotIn(SESSION_KEY, self.client.session)
