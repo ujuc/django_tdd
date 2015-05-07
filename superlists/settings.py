@@ -127,6 +127,12 @@ LOIGGING = {
         'django': {
             'handlers': ['console'],
         },
+        'accounts': {
+            'handlers': ['colsole'],
+        },
+        'lists': {
+            'handlers': ['console'],
+        },
     },
     'root': {'level': 'INFO'},
 }
