@@ -36,7 +36,9 @@ class MyListsTest(FunctionalTest):
 
         # 그녀가 만든 목록에 첫 번째 아이템이 있는 것을 확인한다
         self.browser.find_element_by_link_text('그물 만들기').click()
-        self.assertEqual(self.browser.current_url, first_list_url)
+        self.wait_for(
+            lambda: self.assertEqual(self.browser.current_url, first_list_url)
+        )
 
         # 다른 목록도 확인하기도 한다
         self.browser.get(self.server_url)

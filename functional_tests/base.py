@@ -2,8 +2,11 @@
 
 import os
 import sys
+import time
 from datetime import datetime
+from selenium.common.exceptions import WebDriverException
 
+DEFAULT_WAIT = 5
 SCREEN_DUMP_LOCATION = os.path.abspath(
     os.path.join(os.path.dirname(__file__), 'screendumps')
 )
@@ -16,7 +19,6 @@ from .server_tools import reset_database
 
 
 class FunctionalTest(StaticLiveServerTestCase):
-
     @classmethod
     def setUp(cls):
         for arg in sys.argv:
@@ -35,8 +37,6 @@ class FunctionalTest(StaticLiveServerTestCase):
             super().tearDownClass()
 
     def setUp(self):
-        if self.against_staging:
-            reset_database(self.server_host)
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
 
@@ -97,11 +97,21 @@ class FunctionalTest(StaticLiveServerTestCase):
 
     def _get_filename(self):
         timestemp = datetime.now().isoformat().replace(':', '.')[:19]
-        return '{folder}/{classname}.{method}-window{windowid}-{timestemp}'\
+        return '{folder}/{classname}.{method}-window{windowid}-{timestemp}' \
             .format(
-            folder=SCREEN_DUMP_LOCATION,
-            classname=self.__class__.__name__,
-            method=self._testMethodName,
-            windowid=self._windowid,
-            timestemp=timestemp
-        )
+                folder=SCREEN_DUMP_LOCATION,
+                classname=self.__class__.__name__,
+                method=self._testMethodName,
+                windowid=self._windowid,
+                timestemp=timestemp
+            )
+
+    def wait_for(self, function_with_assertion, timeout=DEFAULT_WAIT):
+        start_time = time.time()
+        while time.time() - start_time < timeout:
+            try:
+                return function_with_assertion()
+            except (AssertionError, WebDriverException):
+                time.sleep(0.1)
+        # 다시한번 시도 문제가 있으면 테스트 실패
+        return function_with_assertion()
