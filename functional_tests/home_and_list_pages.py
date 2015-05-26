@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+ITEM_INPUT_ID = 'id_text'
+
 class HomePage(object):
 
     def __init__(self, test):
@@ -11,7 +13,7 @@ class HomePage(object):
         return self
 
     def get_item_input(self):
-        return self.test.browser.find_element_by_id('id_text')
+        return self.test.browser.find_element_by_id(ITEM_INPUT_ID)
 
     def start_new_list(self, item_text):
         self.go_to_home_page()
@@ -20,6 +22,13 @@ class HomePage(object):
         list_page = ListPage(self.test)
         list_page.wait_for_new_item_in_list(item_text, 1)
         return list_page
+
+    def go_to_my_lists_page(self):
+        self.test.browser.find_element_by_link_text('나의 목록').click()
+        self.test.wait_for(lambda: self.test.assertEqual(
+            self.test.browser.find_element_by_tag_name('h1').text,
+            '나의 목록'
+        ))
 
 class ListPage(object):
 
@@ -54,3 +63,14 @@ class ListPage(object):
             email,
             [item.text for item in self.get_shared_with_list()]
         ))
+
+    def get_item_input(self):
+        return self.test.browser.find_element_by_id(ITEM_INPUT_ID)
+
+    def add_new_item(self, item_text):
+        current_pos = len(self.get_list_table_rows())
+        self.get_item_input().send_keys(item_text + '\n')
+        self.wait_for_new_item_in_list(item_text, current_pos + 1)
+
+    def get_list_owner(self):
+        return self.test.browser.find_element_by_id('id_list_owner').text
