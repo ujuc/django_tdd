@@ -2,6 +2,7 @@
 
 from selenium import webdriver
 from .base import FunctionalTest
+from .home_and_list_pages import HomePage
 
 def quit_if_possible(browser):
     try: browser.quit()
@@ -22,14 +23,17 @@ class SharingTest(FunctionalTest):
         self.browser = oni_browser
         self.create_pre_authenticated_session('oniciferous@example.com')
 
-        # 에디스는 메인 페이지를 방문한다.
+        # 에디스는 메인 페이지를 방문해서 목록 작성을 시작한다.
         self.browser = edith_browser
-        self.browser.get(self.server_url)
-        self.get_item_inpu_box().send_keys('도움 요청\n')
+        list_page = HomePage(self).start_new_list('도움 요청')
 
         # '이 목록 공유' 옵션을 발견한다.
-        share_box = self.browser.find_element_by_css_selector('inpu[name=email]')
+        share_box = list_page.get_share_box()
         self.assertEqual(
             share_box.get_attribute('placeholder'),
             'your-friend@example.com'
-            )
+        )
+
+        # 리스트를 공유한다.
+        # 오니와 공유했다는 것을 표시하기위해 페이지 갱신
+        list_page.share_list_with('oniciferous@example.com')
